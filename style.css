@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'KanyeFont';
+  src: url('GradFont.otf') format('opentype');
+  font-weight: normal;
+}
+
+:root,
+  :root.graduation {
+  --my-gradient: linear-gradient(to right, #b25186, #853082); 
+  --text-color: #b9b353;
+  --accent-color: #221e1f;
+  --accent-hover: #b9b353;
+  --box-text: #f0e3e6;
+  --button-hover: #f0e3e6;
+  }
+
+  :root.dropout {
+    --my-gradient: linear-gradient(to right, #50171f,#401115);
+    --text-color: #e8982e;
+    --accent-color: #ddb890;
+    --accent-hover: #e8982e;
+    --box-text: #221e1f;
+    --button-hover: #221e1f;
+    }
+  
+  :root.saintpablo {
+    --my-gradient: linear-gradient(to right, #f58b57,#f58b57);
+    --text-color: #221e1f;
+    --accent-color: #e6dfcc;
+    --accent-hover: #221e1f;
+    --box-text: #221e1f;
+    --button-hover: #e6dfcc;
+  }
+  
+  :root.YeezusKing {
+    --my-gradient: linear-gradient(to right, #111F9A,#111F9A);
+    --text-color: #797ed9;
+    --accent-color: #FFD700;
+    --accent-hover: #797ed9;
+    --box-text: #797ed9;
+    --button-hover: #FFD700;
+  }
+
+
+.navbar {
+  padding-top: 15px; 
+  padding-left: 9px;
+  & a {
+    justify-content: space-between;
+    color: var(--accent-color);
+    text-align: center;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+}
+
+.navbar a:hover{
+  color: var(--accent-hover);
+}
+
+.theme-btn {
+  width: 3em;
+  height: 3.13em;
+  padding: .2px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.theme-btn img {
+  height: 3em;
+  width: 3em;
+  object-fit: fill;
+}
+
+header {
+  width: 100%;
+  background: var(--my-gradient);
+  padding-left: 10px;
+  color: var(--text-color);
+}
+
+header h1, header h2 {
+  margin: 0;
+}
+
+header h2{
+  padding-left: 10px;
+}
+
+input{
+  font-family: "KanyeFont";
+  width: 392px;
+  color: var(--text-color);
+}
+
+body {
+  font-family: 'KanyeFont';
+  background: var(--my-gradient);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-x:hidden;
+}
+
+.container {
+  width: 80%;
+  padding-left: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background: var(--accent-color);
+  color: var(--box-text);
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: 'KanyeFont';
+}
+
+button:hover {
+  background: var(--accent-hover);
+  color: var(--button-hover);
+}
+
+.quote-box {
+  width: 200px;
+  border: 2px solid var(--text-color);
+  margin-top: 15px;
+  padding: 10px;  
+}
+
+#Ye-quote{
+  color:var(--accent-color);
+  display: grid;  
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); 
+  grid-gap: 10px; 
+  padding-left: 10px;
+}
+
+.quote-box:hover{
+  background: var(--accent-hover);
+}
+
+footer {
+  width: 100%;
+  background: var(--my-gradient);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: var(--accent-hover);
+}
+
+.text-to-speech {
+  margin-bottom: 15px;
+}
+
+

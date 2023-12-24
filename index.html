@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quotes Generator</title>
+  <link rel="icon" href="/BearYe.png" />
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="https://www.linkedin.com/in/neil-jordan-8883b1273/">Contact</a>
+      <a href="https://github.com/Mr-boop2?tab=repositories">Projects</a>
+    </div>
+    <div class="toggle-container">
+      <button class="theme-btn Graduation" onclick="setTheme('graduation')" title="Graduation theme">
+        <!--Graduation Album Icon-->
+        <img src="IconButtons/GraduationIconButton.png">
+      <button class="theme-btn dropout" onclick="setTheme('dropout')" title="College Dropout theme">
+        <!--College Dropout Album icon-->
+        <img src="IconButtons/DropoutIconButton.png">
+      <button class="theme-btn saintpablo" onclick="setTheme('saintpablo')" title="TLOP theme">
+        <!--TLOP Album icon-->
+        <img src="IconButtons/SaintPablo.png">
+      <button class="theme-btn YeezusKing" onclick="setTheme('YeezusKing')" title="Jesus is King theme">
+        <img src="IconButtons\YeezusKing.png">
+      </button>
+    </div>
+  <div class="container">
+    <h1>Ye Said</h1>
+    <h2>Click the button below to generate a new quote</h2>
+    <button id="submit">Generate Quote</button> <button id="submit">Generate Lyric </button> <button id="speak-button">Speak</button>
+  </div>
+ 
+  <h2>Your Quotes:</h2>
+  <div id="text-to-speech">
+    <input type ="text" id ="user-input" placeholder="Enter text here">
+  </div>
+  <div id="Ye-quote">
+  </div>
+ 
+
+</header>
+
+
+
+  <footer>
+    <p>API from <a href="https://github.com/public-apis/public-apis#personality" target="_blank">public-apis</a></p>
+    <p><a>Disclaimer:</a> any voices used are <br><a>AI Generated content</a></br></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
