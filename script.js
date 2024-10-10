@@ -46,7 +46,7 @@ document.getElementById('speak-button').addEventListener('click', function() {
   const options = {
     method: 'POST',
     headers: {
-        'xi-api-key': '4bb28b4191ead98df052ae264e955486',
+        'xi-api-key': '###',
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
